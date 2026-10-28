@@ -42,7 +42,7 @@ open_source_contribution/
 
 - Reusable addition and subtraction functions with a direct-run example.
 - No demonstration output when imported into another Python file.
-- Tests for normal operations, zero, negative and decimal values, mixed numeric types, equal operands, subtraction order, and quiet imports.
+- Tests for normal operations, zero, negative and decimal values, mixed numeric types, large integers, equal operands, subtraction order, and quiet imports.
 - Contribution instructions, issue and PR templates, and a classroom guide.
 
 ## Installation and setup
@@ -84,7 +84,7 @@ Pass Python integers or floats, including zero and negative numbers. Subtraction
 python -m unittest -v
 ```
 
-This discovers `test_calculator.py`. There are nine test methods; success ends with `Ran 9 tests` and `OK` (elapsed time varies). Failed assertions or import errors produce a nonzero exit status.
+This discovers `test_calculator.py`. There are ten test methods; success ends with `Ran 10 tests` and `OK` (elapsed time varies). Failed assertions or import errors produce a nonzero exit status.
 
 ## Key concepts
 
