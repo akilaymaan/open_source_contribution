@@ -4,7 +4,7 @@
 
 The original repository contained `README.md` and `calculator.py`. Its existing Git history was retained. The calculator's missing colons, malformed print calls, and indentation were corrected; its existing addition and subtraction intent was preserved. A main guard now allows tests to import the functions silently.
 
-Nine standard-library unit tests were added. The README now explains setup, terminology, a ten-step contribution workflow, the historical defect, limitations, and a Mermaid diagram with test and review revision loops. A contribution guide, two issue templates, a PR template, and Python ignore rules complete the demonstration. No external Python dependencies were added.
+Nine standard-library unit tests were added initially; a tenth now checks large integer calculations. The README now explains setup, terminology, a ten-step contribution workflow, the historical defect, limitations, and a Mermaid diagram with test and review revision loops. A contribution guide, two issue templates, a PR template, and Python ignore rules complete the demonstration. No external Python dependencies were added.
 
 The preparation created a local branch named `fix/calculator-and-contribution-guide`. The project was then prepared for direct publication to the original repository's `main` branch at the owner's request. In the published version, these changes are already committed: use a new, real documentation improvement for the live commit exercise below. No GitHub fork, issue, PR, review, or PR merge is claimed. Check `git status` before presenting.
 
@@ -39,7 +39,7 @@ python calculator.py
 python -m unittest -v
 ```
 
-Show `Addition: 15`, `Subtraction: 5`, and nine passing tests. Explain why zero, negatives, operand order, and approximate float comparisons matter.
+Show `Addition: 15`, `Subtraction: 5`, and ten passing tests. Explain why zero, negatives, operand order, and approximate float comparisons matter.
 
 ### 4. Create a branch and commit — local
 
@@ -94,7 +94,7 @@ Trace identify issue → fork → clone → branch → change → test → commi
 
 “My project is Open Source Contribution Workflow Using Git and GitHub. It uses a small Python calculator to show how a contributor proposes a reliable change to a shared repository.
 
-The original calculator could not run because function definitions were missing colons and the print statements had syntax and indentation errors. I corrected those errors and added an import guard. Addition and subtraction now run, and nine automated tests check normal inputs and edge cases.
+The original calculator could not run because function definitions were missing colons and the print statements had syntax and indentation errors. I corrected those errors and added an import guard. Addition and subtraction now run, and ten automated tests check normal inputs and edge cases.
 
 Git tracks changes locally through branches and commits. GitHub hosts repositories and provides forks, issues, pull requests, and review. A fork is an online repository copy; a clone brings a repository to our computer. A branch isolates work, while a commit records a snapshot.
 

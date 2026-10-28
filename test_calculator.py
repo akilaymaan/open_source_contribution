@@ -16,6 +16,12 @@ class CalculatorTests(unittest.TestCase):
     def test_subtract_positive_numbers(self):
         self.assertEqual(subtract(10, 5), 5)
 
+    def test_large_integers(self):
+        # Large integer calculations should remain exact.
+        large = 10 ** 20
+        self.assertEqual(add(large, 1), large + 1)
+        self.assertEqual(subtract(large, 1), large - 1)
+
     def test_zero(self):
         self.assertEqual(add(0, 0), 0)
         self.assertEqual(add(7, 0), 7)
